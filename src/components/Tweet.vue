@@ -28,7 +28,10 @@ import Actions from './Actions.vue';
 export default {
   name: 'Tweet',
   props: {
-    tweet: Object,
+    tweet: {
+      type: Object,
+      required: true
+    },
   },
   components: { User, Timestamp, Message, ProfileImage, Actions }
 }
